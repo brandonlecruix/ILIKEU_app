@@ -19,7 +19,6 @@ var inject_js_modules = () => {
 
     if ( !modules ) {
         modules = [ //place JS modules here.
-            `${chrome.runtime.getURL("./js/features/mine_likes/ig_cookies.js")}`,
             `${chrome.runtime.getURL("./js/play_sound.js")}`,
             `${chrome.runtime.getURL("./js/app_modal.js")}`,
             `${chrome.runtime.getURL("./js/autoliker.js")}`,
@@ -27,8 +26,7 @@ var inject_js_modules = () => {
             `${chrome.runtime.getURL("./js/features/download_ig_posts/download_ig_posts.js")}`,
             `${chrome.runtime.getURL("./js/features/download_ig_posts/modules/download-files.js")}`,
             `${chrome.runtime.getURL("./js/features/unfollowers/unfollowers.js")}`,
-            `${chrome.runtime.getURL("./js/features/unfollowers/unfollowers_modal.js")}`,
-            `${chrome.runtime.getURL("./js/features/mine_likes/mine_likes.js")}`
+            `${chrome.runtime.getURL("./js/features/unfollowers/unfollowers_modal.js")}`
         ];    
     };
 

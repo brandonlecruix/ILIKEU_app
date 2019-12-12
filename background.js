@@ -4,9 +4,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 			chrome.tabs.executeScript(null, {file: "js/injector.js"});	
 			setTimeout(()=>{
 				chrome.webRequest.onCompleted.removeListener(tab_request); 
-			}, 3500);
-			
-			chrome.storage.local.set({"cookie_test": "Alpha"});			 
+			}, 3500);			 
 	    }, 
 
 	    {
