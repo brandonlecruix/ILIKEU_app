@@ -3,7 +3,6 @@ let chrome_extension_uri = document.getElementsByClassName("chrome_extension_uri
 const chrome_extension_id = document.getElementsByClassName("chrome_extension_id")[0].innerHTML;
 let n_of_posts;
 let liking_speed;
-let interval_gradient_increaser;
 
 const unlock_speed_btns = () => {
 	let input = document.getElementsByClassName("Nº_posts_input")[0];
