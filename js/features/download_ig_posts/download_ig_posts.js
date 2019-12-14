@@ -146,7 +146,7 @@ const add_download_btn = () => {
 		let ig_pathname = window.location.pathname;
 		let thumbs;
 		let insert_downloader_fn;
-		const posts_available = document.getElementsByClassName("SCxLW  o64aR")[0];
+		const posts_available = document.getElementsByClassName("SCxLW uzKWK ")[0] || document.getElementsByClassName("SCxLW  o64aR")[0];
 
 		if ( posts_available && posts_available.getElementsByClassName(" eLAPa") !== [] ) {
 			const add_attribute = (attr) => {
@@ -179,9 +179,9 @@ const add_download_btn = () => {
 			}
 
 			if ( ig_pathname !== "/" ) {
-				thumbs = document.getElementsByClassName("SCxLW  o64aR")[0].getElementsByClassName(" eLAPa");
+				thumbs = posts_available.getElementsByClassName(" eLAPa");
 				if ( thumbs.length === 0 ) {
-					thumbs = document.getElementsByClassName("SCxLW  o64aR")[0].getElementsByClassName("lVhHa RNL1l"); //Gotta finish this for direct download from ig tv posts.
+					thumbs = posts_available.getElementsByClassName("lVhHa RNL1l"); //Gotta finish this for direct download from ig tv posts.
 				}
 
 				insert_downloader_fn = `insert_downloader();`;
