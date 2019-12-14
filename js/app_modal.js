@@ -71,7 +71,6 @@ const select_speed_button = (button_index) => {
 
 const change_start_btn_backgr = () => {
 	play_sound(chrome_extension_uri+"samples/buttons.m4a", "button_sfx");
-	clearInterval(interval_gradient_increaser);
 	document.getElementsByClassName("start_btn")[0].style.backgroundColor = "#6d2c8b";
 	remove_app_modal();
 	click_thumbnail(1);
@@ -94,7 +93,6 @@ const remove_app_modal = () => {
 	const app_modal = document.getElementsByClassName("app_wrapper")[0];
 	const app_styles = document.getElementsByClassName("app_styles")[0];
 	const app_js = document.getElementsByClassName("app_js")[0];
-	clearInterval(interval_gradient_increaser);
 
 	if ( app_background && app_modal ) {
 		app_background.remove();
